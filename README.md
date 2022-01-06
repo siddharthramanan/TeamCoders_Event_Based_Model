@@ -13,6 +13,7 @@ This will be a team based learning event using Python notebooks.  Teams will be 
 If you are interested in attending this course or going through its content, then we would recommend:
 * Basic familiarity with the Python programming language and 
 * Basic understanding of source code revision control using Git and Github
+* Ensure you have access to ADNI data. If you do not already have access to the ADNI data set, please visit their [Accessing data](http://adni.loni.usc.edu/data-samples/access-data/) section to find out how to obtain access.
 * Access to a machine that has Python3 setup along with Jupyter notebooks:
   * [The KDE EBM package](https://github.com/ucl-pond/kde_ebm)
   * Insert more code dependencies here.
