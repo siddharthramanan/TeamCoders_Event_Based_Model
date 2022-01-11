@@ -9,7 +9,7 @@
 - [IDEAS](http:///) and [GitHub](https://github.com/) are two project hosting services. The [TeamCoders_Event_Based_Model repository](https://github.com/HealthBioscienceIDEAS/TeamCoders_Event_Based_Model) is hosted on the former, while you will submit your coursework to the latter.
 - For more information and tutorial, have a look at the book/documentation [*Pro Git*](https://git-scm.com/book/en/v2)
 
-## Clone the module repository on IDEAS lab
+## Clone the module repository on IDEAS lab to your local machine
 
 Make a local copy of the entire repository hosted on the remote IDEAS site, e.g. remote repository -> local repository.
 
@@ -20,7 +20,7 @@ git clone https://https://github.com/HealthBioscienceIDEAS/TeamCoders_Event_Base
 Change the current directory to the repository folder, then update to the latest code.
 
 ``` bash
-cd #event base model
+cd # TeamCoders_Event_Base_Model
 git pull
 ```
 
