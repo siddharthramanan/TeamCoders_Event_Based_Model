@@ -44,7 +44,7 @@ Git supports complex workflows for large professional software development proje
 - Push the commits to the remote repository.
 
 ```bash
-git add file_you_with_to _change_from_your_local_directory
+git add file_you_wish_to _change_from_your_local_directory
 git commit -m "a brief message summarise the committed changes"
 git push origin main
 ```
