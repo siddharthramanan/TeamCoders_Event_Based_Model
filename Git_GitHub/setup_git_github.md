@@ -11,10 +11,10 @@
 
 ## Clone the module repository on IDEAS lab
 
-Make a local copy of the entire repository hosted on the remote WEISSLab, e.g. remote repository -> local repository.
+Make a local copy of the entire repository hosted on the remote IDEAS site, e.g. remote repository -> local repository.
 
 ``` bash
-git clone https://
+git clone https://https://github.com/HealthBioscienceIDEAS/TeamCoders_Event_Based_Model
 ```
 
 Change the current directory to the repository folder, then update to the latest code.
