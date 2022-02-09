@@ -1,11 +1,12 @@
 # First Git Commands 
-You should have already completed the setup instructions for this workshop and have Git installed. Launch a command line environment (in Windows launch “Git Bash” from the Start Menu, on Linux or Mac start a new Terminal). We will use this command line interface throughout these materials, we prefer this for educational reasins because the command line is a commmon enviroment for all the operating systems.
+You should have already completed the setup instructions for this workshop and have Git installed. Launch a command line environment (in Windows launch “Git Bash” from the Start Menu, on Linux or Mac start a new Terminal). We will use this command line interface throughout these materials, we prefer this for educational reasons because the command line is a commmon enviroment for all the operating systems.
 
 You muct provide some extra information before it is ready to interact with Git.
 The information is related to the person who uses Git and it gives the identity of the user in any project which you might work on your computer. In collaborative projects this is used to distinguish who has made what changes. You only need to perform the above commands once for each new computer Git is installed on.
 
 ```bash
  git config --global user.name "FIRST_NAME LAST_NAME"   # Use the name that you wish to be identified 
+
  git config --global user.email "email@example.com"  # Use your email that is linked with your GitHub 
  ```
 
@@ -79,7 +80,7 @@ The forder tree of this project should look like the picture. Only the directory
 
 ![Directories_tree](repo_directories_tree.png)
 
-## master and main branches
+## Master and main branches
  Traditionally, the default branch name in Git whenever you init a repository was master. However, the sensitivity of the online community has shifted lately and GitHub, use now main as the default name instead. You can read the rationale in this [link](https://www.theserverside.com/feature/).
 
 If you are using git verison 2.28 or higher (you can find the version you are using with git --version) you can change the default branch name for all new repositories with:
@@ -88,7 +89,7 @@ git config --global init.defaultBranch main
 ```
 With this command the word "master" in the Git code, it is being  replaced by the word "master" as the GitHub uses it. So there is an alighment for the main branch between Git and GitHub
 
- For existing repositories or if your git version is lower tha 2.28, you can create the master branch normally and then re-name it with:
+ For existing repositories or if your git version is lower than 2.28, you can create the master branch normally and then re-name it with:
 
  ```bash
 git branch -m master main
@@ -139,9 +140,12 @@ You need to go to the relevant directory and delete it with the command **rm -r*
 Do not follow these commands unless you have made the mistake.
 Lets say that the directory food inside the recipies directory was accidentaly made a git repo.
 ```bash 
-food % git init 
+food $ git init 
+```
+
 
 Output
+```bash
 
 Initialized empty Git repository in /Users/mary/cooking/recipies/food/.git/
 (base) mary  food % ls -a
@@ -186,8 +190,8 @@ But be careful the syntax! Running this command in the wrong directory will remo
 In this section we present:
 
 - How to create a Git repo using the git init command
-- How to avoid the confussion between master and main commands and  always use the main comand in Git which is a common command with GitHub.
-- How to always check teh current state of teh repository with the git status command 
+- How to avoid the confussion between master and main commands and  always use the main command in Git which is a common command with GitHub.
+- How to always check the current state of the repository with the git status command. 
 - How to correct mistakes which involved accidental multiple Git repos that confuse the Git software.
 
 
