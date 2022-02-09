@@ -314,3 +314,6 @@ Let’s type in a few lines of text. Once we’re happy with our text, we can pr
 
 These are the most commonly used Unix shell commands, you will be more confortable to use them with practice.
 There are commands that facilitate operations with multiple files and folders. Others that can create pipelines and filters. If you want to dive into the Unix shell and explore more the capabilities the [The Unix Shell](https://swcarpentry.github.io/shell-novice/) software carpentry course is recommended.
+
+
+More commands at teh site 
