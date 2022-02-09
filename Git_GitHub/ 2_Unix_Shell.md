@@ -183,7 +183,7 @@ Output
 ```
 ## Move and copy files 
 In our  /Users/mary/project_1/chapter_1  directory we have a file text1.txt  which isn’t a particularly informative name, so let’s change the file’s name using ***mv***, which is short for ‘move’to quores.txt:
-First thing to do is to create teh file quote.tx  using the ***touch*** command. Then use the ***mv*** with two arguments (where is moving the file and to where the movement is done)
+First thing to do is to create the file quote.tx  using the ***touch*** command. Then use the ***mv*** with two arguments (where is moving the file and to where the movement is done)
 
 ```bash
 touch quotes.txt
@@ -196,7 +196,7 @@ Output
 .		animals.pdf	quotes.txt
 ..		data.doc	text1.txt
 ```
-This overwrights what is in quites.txt with the cntaint of the test1.txt, so it has to be used with caution.
+This overwrights what is in quites.txt with the containt of the test1.txt, so it has to be used with caution.
 ### Move file to another directory##
 Lets ay that we want to move the file data.doc from the chapter_1 folder to the oen above directory which is the project_1. We again use ***mv*** but with difefrent arguments.
 
@@ -289,6 +289,28 @@ Output
 	data.doc		introduction.doc
 ```
 The folder Pictures  doesnt exist anymore. 
+
+## Open an editor from terninal
+Writting a document using the terminal is not as straight forward.
+The terninal does not support .doc or .md formats.
+The way to write a text file is to open an editor called **nano** 
+
+When we say, ‘nano is a text editor’ we really do mean ‘text’: it can only work with plain character data, not tables, images, or any other human-friendly media. We use it in examples because it is one of the least complex text editors. However, because of this trait, it may not be powerful enough or flexible enough for the work you need to do after this workshop. We use it to create text files and during the workshops we modify them to demonstrate the work with Git and GitHub
+
+
+Lets open the text editor and start writting the text:
+
+```bash
+
+$ cd thesis
+$ nano draft.txt
+```
+
+The steps how to write and save using the nano editor are in the picture
+![nano editor](nano_edits.png) 
+
+Let’s type in a few lines of text. Once we’re happy with our text, we can press Ctrl+O (press the Ctrl or Control key and, while holding it down, press the O key) to write our data to disk (we’ll be asked what file we want to save this to: press Return to accept the suggested default of draft.txt).
+
 
 These are the most commonly used Unix shell commands, you will be more confortable to use them with practice.
 There are commands that facilitate operations with multiple files and folders. Others that can create pipelines and filters. If you want to dive into the Unix shell and explore more the capabilities the [The Unix Shell](https://swcarpentry.github.io/shell-novice/) software carpentry course is recommended.
