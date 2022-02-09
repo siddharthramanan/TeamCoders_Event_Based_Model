@@ -7,7 +7,8 @@ It is recommended to start reading it via the order:
 - 1_Git_and_GitHub.md
 - 2_Unix_Shell.md
 - 3_First_Git_Commands.md
-- 4_Git_Commit.md
+- 4_How_to_Commit.md
+- 5_Git_Commit_History.md
 - 5_SSH_Keys
 - 6_Connect_Git_GitHub
 - Workflow
