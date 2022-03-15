@@ -15,7 +15,7 @@ The operating system responsible for managing files and directories is called th
 
 Several commands are frequently used to create, inspect, rename, and delete files and directories. The most frequent one is to know to navigate in directories (folders).
 Let's say that we have a home directory \Users\mary\project_1\introduction.txt
-We run the command ***pwd*** (which stands for ‘print working directory').
+We run the command `pwd` (which stands for ‘**p**rint **w**orking **d**irectory').
 If we are at the directory, \Users\mary and run the command.
 
 
