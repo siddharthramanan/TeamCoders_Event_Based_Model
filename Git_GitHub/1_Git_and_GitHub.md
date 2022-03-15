@@ -20,7 +20,7 @@ If you want to share your repositopy you connect to a GitHub account. You need t
 
 ![Git_upload](image_2.png)
 
-Your collaborators can download the GitHub repository to their local computer and work on a part of a project making a branch. Then they upload their work and after revisions could merge it to the main. 
+Your collaborators can download the GitHub repository to their local computer and work on a part of a project making a branch. Then they upload their work and request a review before is merged into the main branch.
 
 ![Git_upload](image_3.png)
 
