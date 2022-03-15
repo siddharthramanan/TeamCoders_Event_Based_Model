@@ -1,7 +1,7 @@
 # Git and GitHub
 
 Git is the most widely used version control software (VCS). It is a very powerfull tool to know, however it is quite difficult to start using it.
-Git and GitHub are two different tools to facilitate version control, collabotation and sharing. Its important to understand that Git is not GitHub
+Git and GitHub are two different tools to facilitate version control, collabotation and sharing. It's important to understand that Git is not GitHub
 
 Git is a software that opperates locally at your machine. 
 A repository in Git is a project in a "Folder". It contains all of the files and folders associated with your project and all the various versions of them over time.That helps to manage project lines. If you are just using Git for version controll of the repository and you don't want to share your projects, you might never use GitHub.

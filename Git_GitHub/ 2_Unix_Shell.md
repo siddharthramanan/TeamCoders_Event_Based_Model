@@ -108,7 +108,7 @@ How to create folders and files within folders (nested folders).
 Let's say we are at the directory \Users\mary\project_1, and I want to create another directory called chapter_1.
 We use the command ***mkdir***, (which stands for make directory)
 
-Lets start again with the ***pwd*** to verify the directory we are in, then follow with ***ls -a*** to see all files and folders in the directory then with ***mkdir chapter_1*** to meake the new directory and finaly with ***ls -a*** to see all files and the new directory
+Let's start again with the ***pwd*** to verify the directory we are in, then follow with ***ls -a*** to see all files and folders in the directory then with ***mkdir chapter_1*** to meake the new directory and finaly with ***ls -a*** to see all files and the new directory
 
 ```bash
 pwd 
@@ -183,7 +183,7 @@ Output
 ```
 ## Move and copy files 
 In our  /Users/mary/project_1/chapter_1  directory we have a file text1.txt  which isn’t a particularly informative name, so let’s change the file’s name using ***mv***, which is short for ‘move’to quores.txt:
-First thing to do is to create the file quote.tx  using the ***touch*** command. Then use the ***mv*** with two arguments (where is moving the file and to where the movement is done)
+First thing to do is to create the file `quote.txt`  using the ***touch*** command. Then use the ***mv*** with two arguments (where is moving the file and to where the movement is done)
 
 ```bash
 touch quotes.txt
@@ -196,7 +196,7 @@ Output
 .		animals.pdf	quotes.txt
 ..		data.doc	text1.txt
 ```
-This overwrights what is in quites.txt with the containt of the test1.txt, so it has to be used with caution.
+This overwrights what is in quotes.txt with the content of the test1.txt, so it has to be used with caution.
 ### Move file to another directory##
 Lets ay that we want to move the file data.doc from the chapter_1 folder to the oen above directory which is the project_1. We again use ***mv*** but with difefrent arguments.
 
@@ -212,7 +212,7 @@ Output
 quotes.txt	
 text1.txt
 ```
-The data.doc does'n exists at the chapter_1 folder anymore
+The data.doc doesn't exists at the chapter_1 folder anymore
 When you go up one directory at the project_1 folder and look in the file list, we will found it there.
 
 ```bash
@@ -288,7 +288,7 @@ Output
 	chapter_1		draft.doc
 	data.doc		introduction.doc
 ```
-The folder Pictures  doesnt exist anymore. 
+The folder Pictures  doesn't exist anymore. 
 
 ## Open an editor from terninal
 Writting a document using the terminal is not as straight forward.
@@ -298,7 +298,7 @@ The way to write a text file is to open an editor called **nano**
 When we say, ‘nano is a text editor’ we really do mean ‘text’: it can only work with plain character data, not tables, images, or any other human-friendly media. We use it in examples because it is one of the least complex text editors. However, because of this trait, it may not be powerful enough or flexible enough for the work you need to do after this workshop. We use it to create text files and during the workshops we modify them to demonstrate the work with Git and GitHub
 
 
-Lets open the text editor and start writting the text:
+Let's open the text editor and start writting the text:
 
 ```bash
 
