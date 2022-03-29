@@ -9,42 +9,49 @@ At MacOS, the shell opens in the Terminal application and uses the % prompt. In 
 
 The prompt is followed by a text cursor, a character that indicates the position where your typing will appear. 
 
-## Navigate throught directories, folders and nested folders.
+## Navigate throught directories (folders), and nested folders.
 
 The operating system responsible for managing files and directories is called the file system. It organizes our data into files, which hold information, and directories (also called ‘folders’), which contain files or other directories. 
 
 Several commands are frequently used to create, inspect, rename, and delete files and directories. The most frequent one is to know to navigate in directories (folders).
-Let's say that we have a home directory \Users\mary\project_1\introduction.txt
-We run the command ***pwd*** (which stands for ‘print working directory').
-If we are at the directory, \Users\mary and run the command.
+Let's say that we have a home directory `/Users/mary/`
+We run the command `pwd` (which stands for ‘**p**rint **w**orking **d**irectory').
+If we are at the directory, /Users/mary and run the command.
 
 
 ```bash
 pwd
 ```
 
-Output
-```bash
-\Users\mary # the home directory 
-```
-
 The output will be the home directory
-\Users\mary
 
-In the directory (folder) project_1 at    the directory        \Users\mary\project_1  
+```bash
+/Users/mary 
+
+```
+<!-- Lets creatte a folder Thesis-->
+
+In the directory (folder) Thesis at      `/Users/mary/Thesis`  
+
+<!-- Lets move into the folder and show files  -->
+``` cd Thesis```
+We are now in the directory (folder Thesis). Lets make another directory called Data
+
 there are 6 diffrent files. 
 - introduction.doc,  
 - data_vis.py
 - text.txt, 
-- .gif, 
-- Pictures, (this is a directory and has not . extension)
--  .DS_store.
 
-So let’s try our first command, ***ls*** (which is short for listing).
+- Pictures,mk (this is a directory and ls has not . extension)
+  .DS_store.
+
+So let’s try our first command, `ls` (which is short for listing).
 This command lists some of the contents of the current directory:
 
 ```bash
 ls
+
+
 ```
 
 Output
