@@ -1,0 +1,14 @@
+name: teamcoder_ebm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7 
+  - nibabel
+  - nilearn
+  - jupyterlab
+  - pip
+  - pip:
+    - antspyx
+    - niwidgets
+
+
