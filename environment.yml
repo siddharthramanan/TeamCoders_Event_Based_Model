@@ -3,11 +3,12 @@ channels:
   - conda-forge
 dependencies:
   - python=3.7 
+  - pip
   - nibabel
   - nilearn
   - jupyterlab
   - numpy=1.16.3
-  - pip
+  - fsleyes
   - pip:
     - antspyx
     - niwidgets
