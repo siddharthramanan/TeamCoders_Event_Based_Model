@@ -11,6 +11,7 @@ It is recommended to start reading it via the order:
 - 5_Git_Commit_History.md
 - 5_SSH_Keys
 - 6_Connect_Git_GitHub
-- Workflow
+- Workflow needed for TeamCoders
+
 
 
