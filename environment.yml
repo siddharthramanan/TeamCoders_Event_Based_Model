@@ -13,5 +13,6 @@ dependencies:
   - pip:
     - antspyx
     - niwidgets
+    - git+https://github.com/ucl-pond/kde_ebm
 
 
