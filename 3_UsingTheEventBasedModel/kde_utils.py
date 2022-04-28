@@ -1,6 +1,7 @@
 import itertools
 import numpy as np
 from kde_ebm.mixture_model import fit_all_kde_models, fit_all_gmm_models,get_prob_mat
+from kde_ebm.plotting import mcmc_uncert_mat
 from kde_ebm.mcmc import mcmc
 from sklearn.model_selection import RepeatedStratifiedKFold
 
@@ -21,7 +22,7 @@ def extract_pvd(ml_order,samples):
         for i in range(n_):
             pvd[i, :] = np.sum(all_orders == ml_order[0][i], axis=0)
         #pvd_cv, cv_rank = reorder_PVD_average_ranking(PVD=pvd)
-        pvd, rank = reorder_PVD(pvd)
+        pvd, rank = reorder_pvd(pvd)
         seq = [ml_order[0][i] for i in rank]
     else:
         #* Single PVD (ML results)
@@ -33,7 +34,7 @@ def extract_pvd(ml_order,samples):
             pvd[i, :] = np.sum(samples_ == seq[i], axis=0)
     return pvd, seq
 
-def reorder_PVD(PVD,mean_bool=False,edf_threshold=0.5):
+def reorder_pvd(PVD,mean_bool=False,edf_threshold=0.5):
     """
     Reorders a PVD by scoring the frequencies in each row, then ranking in increasing order.
 
@@ -279,33 +280,3 @@ def ebm_2_repeatedcv(x,y,events,
         print('Repeated CV fold {0} of {1}'.format(f,rcv_folds.get_n_splits()))
     return mixtures_cv, mcmc_samples_cv, ml_orders_cv, staging_errors_cv
 
-
-
-    # Yet another convenience function
-def extract_pvd(ml_order,samples):
-    if type(ml_order) is list:
-        #* List of PVDs from cross-validation/bootstrapping
-        n_ = len(ml_order[0])
-        pvd = np.zeros((n_,n_))
-        #all_orders = np.array(ml_order)
-        if type(samples[0]) is list:
-            #* 10-fold CV returns MCMC samples for each fold separately in a list - concatenate them here
-            all_samples = list(itertools.chain.from_iterable(samples))
-        else:
-            #* Bootstrapping returns MCMC samples pre-concatenated
-            all_samples = samples
-        all_orders = np.array([x.ordering for x in all_samples])
-        for i in range(n_):
-            pvd[i, :] = np.sum(all_orders == ml_order[0][i], axis=0)
-        #pvd_cv, cv_rank = reorder_PVD_average_ranking(PVD=pvd)
-        pvd, rank = reorder_PVD(pvd)
-        seq = [ml_order[0][i] for i in rank]
-    else:
-        #* Single PVD (ML results)
-        n_ = len(ml_order)
-        pvd = np.zeros((n_,n_))
-        samples_ = np.array([x.ordering for x in samples])
-        seq = ml_order
-        for i in range(n_):
-            pvd[i, :] = np.sum(samples_ == seq[i], axis=0)
-    return pvd, seq
