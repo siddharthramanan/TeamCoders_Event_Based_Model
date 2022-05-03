@@ -1,11 +1,11 @@
 # Basic Unix Shell (Terminal) Commands
 
-If you haven't used the command line at the terminal before, we show here the basic commands to know, and you will use them while working with git.
+If you haven't used the command line at the terminal before, we show here the basic commands to know, and you will use them while working with Git.
 
  We recommend you write the commands down in a list and refer to them until you get familiar.
 
 The shell in the window typically uses $ as the prompt but may use a different symbol. 
-At MacOS, the shell opens in the Terminal application and uses the % prompt. In the examples for this lesson, we'll show the prompt as %. Most importantly: when typing commands, either from these lessons or from other sources, do not type the prompt, only the commands that follow it. Also, note that after you type a command, you have to press the Enter key to execute it.
+At MacOS, the shell opens in the Terminal application and uses the % prompt. In the examples for this lesson, I'll show the prompt as $. Most importantly: when typing commands, either from these lessons or from other sources, do not type the prompt, only the commands that follow it. Also, note that you have to press the Enter key after you type a command to execute it.
 
 The prompt is followed by a text cursor, a character that indicates the position where your typing will appear. 
 
