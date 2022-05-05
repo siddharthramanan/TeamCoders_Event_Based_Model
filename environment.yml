@@ -7,11 +7,14 @@ dependencies:
   - pandas
   - nibabel
   - nilearn
+  - tqdm
   - jupyterlab
   - numpy=1.16.3
   - fsleyes
   - pip:
     - antspyx
     - niwidgets
+    - git+https://github.com/noxtoby/awkde
+    - git+https://github.com/ucl-pond/kde_ebm
 
 
