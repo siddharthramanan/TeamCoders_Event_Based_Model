@@ -70,7 +70,7 @@ Output
 ```bash
 .		..		.git		cake.md		pizza.md
 ``` 
-We can see the hidden directory .git in the recepes directory, this signifies that it is a Git directory.
+We can see the hidden directory .git in the recipes directory, this signifies that it is a Git directory.
 In general we can create various Git repositories within your projects, whatever happens in those folders, whatever git commands you run , whatever history is stored there are completely separated and not connected. 
 **BEWARE** when you initialise a Git repository inside a folder all the nested folders within it are automatically in the Git repository (there is no need to initialise Git within the directory again).
 
