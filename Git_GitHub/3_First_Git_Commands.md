@@ -184,7 +184,7 @@ Output
 -----
 .		..		curry.md	pizza.md
 ```
-This is recommended when there are many nested git directories in the parent (ie recepes)
+This is recommended when there are many nested git directories in the parent (ie recipes)
 But be careful the syntax! Running this command in the wrong directory will remove the entire Git history of a project you might want to keep. Therefore, always check your current directory using the command pwd
 
 In this section we present:
