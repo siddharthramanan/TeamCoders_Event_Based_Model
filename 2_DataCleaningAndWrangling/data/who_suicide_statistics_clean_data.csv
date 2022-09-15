@@ -1,4 +1,4 @@
-country,year,sex,age,suicides_no,population, gdp_for_year_usd 
+country,year,sex,age,suicides_no,population,gdp_for_year_usd
 Albania,1987,male,15-24 years,21,312900,2156624900
 Albania,1987,male,35-54 years,16,308000,2156624900
 Albania,1987,female,15-24 years,14,289700,2156624900
