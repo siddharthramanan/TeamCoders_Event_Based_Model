@@ -1,7 +1,7 @@
 5_Git_Commit_History
 # Version control and how to track commits
 
-Using **git log** w ecan see the commits we have created
+Using **git log** we can see the commits we have created
 ```bash 
 git log 
 ```
@@ -31,7 +31,7 @@ Your output will differ from the above not only in the date and author fields bu
 
 ### What is the commit hash?
 A commit hash is a string that uniquely identifies a specific commit. They are the really long list of numbers and letters that you can see in the output above after the word commit. For example, f50fddc8b03956ce453375c1cf5d5799e5ce7a51 for the last entry.
-Ocasionally, you will need to refer to a specific commit using the hash. Normally, you can use just the first 5 or 6 elements of the hash (eg. for the hash above it will be enough to use f50fdd) as it is very unlikely that there will be two commit hashes with identical starting elements.
+Occasionally, you will need to refer to a specific commit using the hash. Normally, you can use just the first 5 or 6 elements of the hash (eg. for the hash above it will be enough to use f50fdd) as it is very unlikely that there will be two commit hashes with identical starting elements.
 Throughout this course, we will indicate that you need to use the hash with [commit-hash]. On those occasions, replace the whole string (including the square brackets!) with the hash id. For example, if you need to use git show (see example below) with the above commit hash, you will run:
 ```bash
 git show f50fdd
@@ -82,7 +82,7 @@ Press **q** : to exit the commit
 ## How to use git log
 Lets see how we can create a commit history (different versions of the file), observe the changes of the file and recall the changes for a commit.
 
-From the previous example we will change the pizza.txt file. This time I'll change the tomato sause.
+From the previous example we will change the pizza.txt file. This time I'll change the tomato sauce.
 
 ```bash
 nano pizza.txt
@@ -92,13 +92,13 @@ Make the commit:
 
 ``bash 
 git add pizza.txt
-git commit -m 'alter tomato sause'
+git commit -m 'alter tomato sauce'
 ```
 
 **Output**
 
 ``bash 
-[main 66053c9] alter tomato sause
+[main 66053c9] alter tomato sauce
  1 file changed, 6 insertions(+), 4 deletions(-)
 ```
 
@@ -115,7 +115,7 @@ commit 66053c9473353ade36455bb17f6f3e3edfd2d320 (HEAD -> main)
 Author: MaryT <m.tziraki@gmail.com>
 Date:   Tue Feb 8 18:23:17 2022 +0000
 
-    alter tomato sause
+    alter tomato sauce
 
 commit cebdb2ced222527abc2b062c804487e9c179bc6c
 Author: MaryT <m.tziraki@gmail.com>
@@ -142,7 +142,7 @@ commit 66053c9473353ade36455bb17f6f3e3edfd2d320 (HEAD -> main)
 Author: MaryT <m.tziraki@gmail.com>
 Date:   Tue Feb 8 18:23:17 2022 +0000
 
-    alter tomato sause
+    alter tomato sauce
 ```
 Here it shows the last (-1 ) commit with its hash number, the author, time and the message.
 
@@ -155,7 +155,7 @@ Here it shows the last (-1 ) commit with its hash number, the author, time and t
 
  **Output**
  ```bash
-66053c9 (HEAD -> main) alter tomato sause
+66053c9 (HEAD -> main) alter tomato sauce
 cebdb2c first changes
 f50fddc write ingredients
 ```
@@ -281,8 +281,8 @@ git log --oneline
 
 **Output**
 ```bash                      
-fb834e8 (HEAD -> main) add sause ingredients
-66053c9 alter tomato sause
+fb834e8 (HEAD -> main) add sauce ingredients
+66053c9 alter tomato sauce
 cebdb2c first changes
 f50fddc write ingredients
 ```
@@ -359,7 +359,7 @@ index 6da9b0a..e0c4a60 100644
  
 -handful of basil leaves (optional)
 ```
-Here we see all the diffrences (+) or (-) 3 versions backwards.
+Here we see all the differences (+) or (-) 3 versions backwards.
 Press Q to exit 
 
 If you want to see the file teh changes as well as the commit you can use **git show HEAD~2**
@@ -374,7 +374,7 @@ commit 66053c9473353ade36455bb17f6f3e3edfd2d320
 Author: MaryT <m.tziraki@gmail.com>
 Date:   Tue Feb 8 18:23:17 2022 +0000
 
-    alter tomato sause
+    alter tomato sauce
 
 diff --git a/food/pizza.txt b/food/pizza.txt
 index 6da9b0a..81d710a 100644
@@ -400,20 +400,20 @@ index 6da9b0a..81d710a 100644
  125g ball mozzarella, sliced
 :
 ```
-Press Q after the semicollon
+Press Q after the semicolon
 
 ```bash
 git log --oneline
 
 Output
-fb834e8 (HEAD -> main) add sause ingredients
-66053c9 alter tomato sause
+fb834e8 (HEAD -> main) add sauce ingredients
+66053c9 alter tomato sauce
 cebdb2c first changes
 f50fddc write ingredients
 ```
 if you want to see the file with commit hash 66053c9 use 
 git checkout 66053c9 pizza.txt
-Be carefull to add the file at the end, otherwise you will be in "detached HEAD" state
+Be careful to add the file at the end, otherwise you will be in "detached HEAD" state
 
 ```bash 
 git checkout 66053c9 pizza.txt
