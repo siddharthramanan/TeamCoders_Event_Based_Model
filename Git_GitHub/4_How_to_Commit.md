@@ -6,14 +6,14 @@ To demonstrate changes in files using Unix Shell at the terminal and command lin
 Now create a text file called pizza.text using the nano editor. Write few lines and save it as indicated at the picture.
 
 ```bash 
-cd cooking/recipies/food/
+cd cooking/recipes/food/
 nano pizza.txt
 ```
 Editor opens 
 
 ![pizza.txt](nano_pizza.png)
 
-Then press *control O* to save (write out) and *Enter* when asked 'Filename to Write: pizza.txt'. Finaly press *control X * to exit
+Then press *control O* to save (write out) and *Enter* when asked 'Filename to Write: pizza.txt'. Finally press *control X * to exit
 
 Now you have a text file in the food folder
 ```bash
@@ -113,7 +113,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-This shows that there are untract changes at other files. If we want to keep everything committed in the first snap of the repository, we add and commit everything at once. run the following commands.
+This shows that there are untracked changes at other files. If we want to keep everything committed in the first snap of the repository, we add and commit everything at once. run the following commands.
 
 ```bash 
 git add curry.md pizza.md ../baking/
@@ -129,7 +129,7 @@ git commit -m "first changes"
  create mode 100644 food/pizza.md
  ```
 
- This shows that we are at the main (main) branch of the recipies repository and we have saved all the changes  at the directories baking and food: 
+ This shows that we are at the main (main) branch of the recipes repository and we have saved all the changes  at the directories baking and food: 
  baking/cake.md
  baking/cookies.md
  food/curry.md
@@ -150,7 +150,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-The output we get now is very minimal. This highlights an important point about the status command - it’s purpose is to report on changes in the -recipies- repository relative to the last commit. In order to see the commits made in a project we can use:
+The output we get now is very minimal. This highlights an important point about the status command - it’s purpose is to report on changes in the -recipes- repository relative to the last commit. In order to see the commits made in a project we can use:
 
 ## History of the commits with git log 
 ``` bash
@@ -177,7 +177,7 @@ We’ll talk in more detail about the output here but for now the main point is 
 
 
 
-# File changes, Staging and Commiting.  
+# File changes, Staging and Committing.    
 
 We saw that it is a two-step process for our first commit - first, we use git add, then git commit. This is an important pattern used by Git. To understand this in more detail, it’s useful to know that Git has three ‘areas’ shown in the following picture.
 
