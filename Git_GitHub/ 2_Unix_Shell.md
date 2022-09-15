@@ -9,7 +9,7 @@ At MacOS, the shell opens in the Terminal application and uses the % prompt. In 
 
 The prompt is followed by a text cursor, a character that indicates the position where your typing will appear. 
 
-## Navigate throught directories (folders), and nested folders.
+## Navigate through directories (folders), and nested folders.
 
 The operating system responsible for managing files and directories is called the file system. It organizes our data into files, which hold information, and directories (also called ‘folders’), which contain files or other directories. 
 
@@ -29,7 +29,7 @@ The output will be the home directory
 /Users/mary 
 
 ```
-<!-- Lets creatte a folder Thesis-->
+<!-- Lets create a folder Thesis-->
 
 In the directory (folder) Thesis at      `/Users/mary/Thesis`  
 
@@ -37,7 +37,7 @@ In the directory (folder) Thesis at      `/Users/mary/Thesis`
 ``` cd Thesis```
 We are now in the directory (folder Thesis). Lets make another directory called Data
 
-there are 6 diffrent files. 
+there are 6 different files. 
 - introduction.doc,  
 - data_vis.py
 - text.txt, 
@@ -57,7 +57,7 @@ ls
 Output
 
 ```bash
-Pictutes		data_vis.py
+Pictures		data_vis.py
 text.txt 		introduction.doc
 
 ```
@@ -66,7 +66,7 @@ text.txt 		introduction.doc
 ***ls*** lists all the files which are visual in the current directory if you open the project_1 folder on your desktop.
 
 
-For complete listing of all the files it's better to run ***ls -a*** (which is  listing  --all and don't ignore entries starting with . all these are hiden files)
+For complete listing of all the files it's better to run ***ls -a*** (which is  listing  --all and don't ignore entries starting with . all these are hidden files)
 
 ```bash
 ls -a
@@ -75,12 +75,12 @@ ls -a
 Output
 ```bash
 
-.		 Pictutes		data_vis.py
+.		 Pictures		data_vis.py
 ..		.DS_store		introduction.doc
 .git	 text.txt
 
 ```
-The files .DS_store and .git are hidedn ones and we can only detect them using the *ls -a* command
+The files .DS_store and .git are hidden ones and we can only detect them using the *ls -a* command
 The commands ***ls -a***,  and ***ls -f***, are the same.
 
 To change directory the commands 'cd' and 'cd ..' could be used (both stand for change directory)
@@ -115,7 +115,7 @@ How to create folders and files within folders (nested folders).
 Let's say we are at the directory \Users\mary\project_1, and I want to create another directory called chapter_1.
 We use the command ***mkdir***, (which stands for make directory)
 
-Let's start again with the ***pwd*** to verify the directory we are in, then follow with ***ls -a*** to see all files and folders in the directory then with ***mkdir chapter_1*** to meake the new directory and finaly with ***ls -a*** to see all files and the new directory
+Let's start again with the ***pwd*** to verify the directory we are in, then follow with ***ls -a*** to see all files and folders in the directory then with ***mkdir chapter_1*** to make the new directory and finally with ***ls -a*** to see all files and the new directory
 
 ```bash
 pwd 
@@ -131,7 +131,7 @@ ls -a
 
 Output
 ```bash
-		 Pictutes		data_vis.py
+		 Pictures		data_vis.py
 ..		.DS_store		introduction.doc
 .git	 text.txt
 ```
@@ -147,7 +147,7 @@ ls -a
 
 Output
 ```bash
-		 Pictutes		data_vis.py
+		 Pictures		data_vis.py
 ..		.DS_store		introduction.doc
 .git	 text.txt       chapter_1
 
@@ -189,7 +189,7 @@ Output
 ..		data.doc	text1.txt
 ```
 ## Move and copy files 
-In our  /Users/mary/project_1/chapter_1  directory we have a file text1.txt  which isn’t a particularly informative name, so let’s change the file’s name using ***mv***, which is short for ‘move’to quores.txt:
+In our  /Users/mary/project_1/chapter_1  directory we have a file text1.txt  which isn’t a particularly informative name, so let’s change the file’s name using ***mv***, which is short for ‘move’to quote.txt:
 First thing to do is to create the file `quote.txt`  using the ***touch*** command. Then use the ***mv*** with two arguments (where is moving the file and to where the movement is done)
 
 ```bash
@@ -203,15 +203,15 @@ Output
 .		animals.pdf	quotes.txt
 ..		data.doc	text1.txt
 ```
-This overwrights what is in quotes.txt with the content of the test1.txt, so it has to be used with caution.
+This overwrites what is in quotes.txt with the content of the test1.txt, so it has to be used with caution.
 ### Move file to another directory##
-Lets ay that we want to move the file data.doc from the chapter_1 folder to the oen above directory which is the project_1. We again use ***mv*** but with difefrent arguments.
+Lets ay that we want to move the file data.doc from the chapter_1 folder to the oen above directory which is the project_1. We again use ***mv*** but with different arguments.
 
-To remond the nesting is   /Users/mary/project_1/chapter_1
+To move in the nesting :  /Users/mary/project_1/chapter_1
 
 ```bash
 mv data.doc ..  ## the .. denotes one directory up (here is project_1 )
-ls -a    ## this lists files in teh chapter_1 directory 
+ls -a    ## this lists files in the chapter_1 directory 
 ```
 Output
 ```bash
@@ -241,7 +241,7 @@ The data.doc has moved to the project_1 folder.
 The ***cp*** command works very much like ***mv***, except it copies a file instead of moving it. We can check that it did the right thing using ***ls*** with two paths as arguments — like most Unix commands, ls can be given multiple paths at once:
 
 ```bash
-cp data.doc draft.doc  ## copies the file data.doc to a new file draft.doc (it creates it automatically althought  ##we haven't created )
+cp data.doc draft.doc  ## copies the file data.doc to a new file draft.doc (it creates it automatically although  ##we haven't created )
 ls -a    ## this lists files in teh chapter_1 directory 
 ```
 Output
@@ -254,7 +254,7 @@ data.doc		introduction.doc
 If we want to copy a folder (directory) and all its contents by using the recursive option -r, e.g. to back up a directory:
 
 ```bash
-cp -r Pictures Pictutes_backup
+cp -r Pictures Pictures_backup
 
 ls 
 ```
@@ -262,7 +262,7 @@ ls
 Output
 ```bash
 Pictures		data.doc		introduction.doc
-Pictutes_backup		data_vis.py		text.txt
+Pictures_backup		data_vis.py		text.txt
 chapter_1		draft.doc
 ```
 
@@ -280,7 +280,7 @@ Pictures		data.doc		introduction.doc
 Pictutes_backup		data_vis.py
 chapter_1		draft.doc
 ```
-The file text.txt doesnt exist anymore and it's been deleted forever. Beware that the unix shell doesn't have  a trash bin and we can recover deleted files. 
+The file text.txt doesn't exist anymore and it's been deleted forever. Beware that the unix shell doesn't have  a trash bin and we can recover deleted files. 
 
 
 If we want to *delete a folder* we use the ***rm -r*** file command
@@ -297,15 +297,15 @@ Output
 ```
 The folder Pictures  doesn't exist anymore. 
 
-## Open an editor from terninal
-Writting a document using the terminal is not as straight forward.
-The terninal does not support .doc or .md formats.
+## Open an editor from terminal
+Writing a document using the terminal is not as straight forward.
+The terminal does not support .doc or .md formats.
 The way to write a text file is to open an editor called **nano** 
 
 When we say, ‘nano is a text editor’ we really do mean ‘text’: it can only work with plain character data, not tables, images, or any other human-friendly media. We use it in examples because it is one of the least complex text editors. However, because of this trait, it may not be powerful enough or flexible enough for the work you need to do after this workshop. We use it to create text files and during the workshops we modify them to demonstrate the work with Git and GitHub
 
 
-Let's open the text editor and start writting the text:
+Let's open the text editor and start writing the text:
 
 ```bash
 
@@ -323,4 +323,4 @@ These are the most commonly used Unix shell commands, you will be more confortab
 There are commands that facilitate operations with multiple files and folders. Others that can create pipelines and filters. If you want to dive into the Unix shell and explore more the capabilities the [The Unix Shell](https://swcarpentry.github.io/shell-novice/) software carpentry course is recommended.
 
 
-More commands at teh site 
+More commands at the site 
