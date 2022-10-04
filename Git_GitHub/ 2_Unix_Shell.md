@@ -30,7 +30,11 @@ The output will be the home directory
 
 ```
 <!-- Lets create a folder Thesis-->
+```bash
+mkdir Thesis		
+ 		
 
+```
 In the directory (folder) Thesis at      `/Users/mary/Thesis`  
 
 <!-- Lets move into the folder and show files  -->
