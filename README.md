@@ -15,7 +15,7 @@ If you are interested in attending this course or going through its content, the
 * Basic understanding of source code revision control using Git and Github
 * Ensure you have access to ADNI data. If you do not already have access to the ADNI data set, please visit their [Accessing data](http://adni.loni.usc.edu/data-samples/access-data/) section to find out how to obtain access.
 * Access to a machine with the following software:
-  * Python via Anaconda or Miniconda - we provide an environment.yml file to create a conda environment with all of the core dependencies needed for this project. To set this environemnt up, type `conda env create -f environment.yml` in the top directory of this repository.
+  * Python via Anaconda or Miniconda - we provide an environment.yml file to create a conda environment with all of the core dependencies needed for this project. To set this environment up, type `conda env create -f environment.yml` in the top directory of this repository.
   * Image visualisation software - we will be using [fsleyes](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLeyes) when doing most of this work. 
   * We would recommend having some other common neuroimaging software installed, primarily [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL) and [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/). 
 
