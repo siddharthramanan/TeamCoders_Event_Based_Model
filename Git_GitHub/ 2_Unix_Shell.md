@@ -1,15 +1,15 @@
-# Basic Unix Shell (Terminal) Commands
+# **Basic Unix Shell (Terminal) Commands**
 
 If you haven't used the command line at the terminal before, we show here the basic commands to know, and you will use them while working with Git.
 
  We recommend you write the commands down in a list and refer to them until you get familiar.
 
-The shell in the window typically uses $ as the prompt but may use a different symbol. 
+The shell in the window typically uses the (dollar symbol) as the prompt . 
 At MacOS, the shell opens in the Terminal application and uses the % prompt. In the examples for this lesson, I'll show the prompt as $. Most importantly: when typing commands, either from these lessons or from other sources, do not type the prompt, only the commands that follow it. Also, note that you have to press the Enter key after you type a command to execute it.
 
 The prompt is followed by a text cursor, a character that indicates the position where your typing will appear. 
 
-## Navigate through directories (folders), and nested folders.
+## **Navigate through directories (folders), and nested folders.**
 
 The operating system responsible for managing files and directories is called the file system. It organizes our data into files, which hold information, and directories (also called ‘folders’), which contain files or other directories. 
 
@@ -48,21 +48,22 @@ Output : For example is the following (it will not be  same at your directory!!)
 .git	 text.txt
 
 ```
-The files .DS_store and .git are hidden ones and we can only detect them using the *ls -a* command
+The files .DS_store and .git and everything that starts with (.) or(..) are hidden directories and we can only detect them using the *ls -a* command
 The commands **ls -a** list all the files (and the hidden ones),  and **ls -F**, are the same. The **ls -F** lists the directories with the/ ending 
 
 To change directory the commands 'cd' and 'cd ..' could be used (both stand for change directory)
 cd , shortcut to go back to the user’s home directory. the cd..  goes back to one level directory.
 
-Lets say we are at the directory \Users\mary\Pictures\Flowers
+Lets say I am  in the directory \Users\mary\Pictures\Flowers
 
 ```bash
 pwd
 ```
 
-Output
+Output:
+```bash
 Users\mary\Pictures\Flowers
-
+```
 
 \Users\mary (which is the homedirectory)
 
@@ -75,9 +76,8 @@ cd ..
 
 The path that we will be in is 
 \Users\mary\Pictures
-```
 
-## Files and folder creation 
+## Files and folder's creation 
 How to create folders and files within folders (nested folders).
 Let's say we are at the directory \Users\mary\project_1, and I want to create another directory called chapter_1.
 We use the command ***mkdir***, (which stands for make directory)
@@ -115,7 +115,7 @@ Create a files using the **touch** command
 
 ```bash
 touch text.txt
-touch introduction.doc
+touch intro.doc
 ```
 Lets see what is in the project_1 folder: Use **ls -a** 
 
@@ -125,8 +125,7 @@ ls -a
 Output
 ```bash
 		 chapter_1		chapter_2
-..		text.txt 		introduction.doc
-.	 cd
+..		text.txt 		intro.doc
 
 ```
 Now we want to move into the new chapter_1 directory with the **cd chapter_1** command. Then we are into the chapter_1 directory and the paths is  /Users/mary/project_1/chapter_1  
@@ -166,30 +165,30 @@ Output
 ..		data.doc	text1.txt
 ```
 
-## Open an editor from terminal
+## **Open an editor from terminal**
 Writing a document using the terminal is not as straight forward.
 The way to write a text file is to open an editor called **nano** 
 
-When we say, ‘nano is a text editor’ we really do mean ‘text’: it can only work with plain character data, not tables, images, or any other human-friendly media. We use it in examples because it is one of the least complex text editors. However, because of this trait, it may not be powerful enough or flexible enough for the work you need to do after this workshop. We use it to create text files and during the workshops we modify them to demonstrate the work with Git and GitHub
+When we say, ‘nano is a text editor’ we really do mean ‘text’: it can only work with plain character data, not tables, images, or any other human-friendly media. We use it in examples because it is one of the least complex text editors. However, because of this trait, it may not be powerful enough or flexible enough for the work you need to do after this workshop. We use it to create text files and during the workshops we modify them to demonstrate the work with Git and GitHub. Here I show how to create a .doc file but usually we use nano for .txt files
 
 
 Let's open the text editor and start writing the text:
 
 ```bash
-
-$
 $ nano data.doc
 ```
 
 The steps how to write and save using the nano editor are in the picture
-![nano editor](nano_editor.jpg) 
-
-Let’s type in a few lines of text. Once we’re happy with our text, we can press Ctrl+O (press the Ctrl or Control key and, while holding it down, press the O key) to write our data to disk (we’ll be asked what file we want to save this to: press Return to accept the suggested default of draft.txt).
+![nano editor](./fig/nano_editor.jpg) 
 
 
-## Move one file over another (overwrite) 
+Let’s type in a few lines of text. Once we’re happy with our text, we can press Ctrl+O (press the Ctrl or Control key and, while holding it down, press the O key) to write our data to disk (we’ll be asked what file we want to save this to: press Return to accept the suggested default of data.doc).
+
+
+## **Move one file over another (overwrite)** 
 In our  /Users/mary/project_1/chapter_1  directory we have a file text1.txt  which isn’t a particularly informative name, so let’s change the file’s name using ***mv***, which is short for ‘move’to quote.txt:
-First thing to do is to create the file `quote.txt`  using the ***touch*** command. Then use the ***mv*** with two arguments (where is moving the file and to where the movement is done)
+First thing to do is to create the file `quotes.txt`  using the ***touch*** command. Then use the ***mv*** with two arguments (where is moving the file and to where the movement is done)
+(Just type the commands without the comments in green)
 
 ```bash
 touch quotes.txt
@@ -199,18 +198,18 @@ ls -a
 
 Output
 ```bash
-.		animals.pdf	hello.py
+.		animals.csv	hello.py
 ..		data.doc	quotes.txt
 ```
 This overwrites what is in quotes.txt with the content of the test1.txt, so it has to be used with caution.
-### Move file to another directory##
+### **Move file to another directory**
 Lets ay that we want to move the file data.doc from the chapter_1 folder to the oen above directory which is the project_1. We again use ***mv*** but with different arguments.
 
 To move in the nesting :  /Users/mary/project_1/chapter_1
 
 ```bash
-mv animals.csv ../chapter_2/animals.csv   ## the .. denotes one directory up (here is project_1 and then chapter_2 )
-ls -a    ## this lists files in the chapter_1 directory 
+mv animals.csv ../chapter_2/animals.csv   
+ls -a    
 ```
 Output
 ```bash
@@ -218,8 +217,12 @@ Output
 quotes.txt	
 
 ```
-The animal.pdf doesn't exists at the chapter_1 folder anymore
+In the command above the  ## the .. denotes to change the path one directory up (here is project_1 ) and then directs it into  chapter_2. 
+
+The animal.csv doesn't exists at the chapter_1 folder anymore
 When you go up one directory at the project_1 folder and then into the chapter_2 folder (../chapter_2) look in the file list, we will found it there.
+
+(Just type the commands without the comments in green)
 
 ```bash
 cd ../chapter_2  ## (..) goes up one directory  (here is project_ 1) and then in the chapter_2 subdirectories
@@ -241,10 +244,11 @@ Output
 /Users/mary/project_1/
 
 
-### Copying files and directories
+## **Copying files and directories**
 
 The ***cp*** command works very much like ***mv***, except it copies a file instead of moving it. We can check that it did the right thing using ***ls*** with two paths as arguments — like most Unix commands, ls can be given multiple paths at once:
 You should be in the project directory(/Users/mary/project_1/)
+(Just type the commands without the comments in green)
 
 ```bash
 cp  chapter_1/data.doc backup.txt  ## copies the file data.doc that is in chapter_1 subdirectory to a new file backup.txt in the project_1 directory (it creates the file automatically although its didn't exist )
@@ -262,9 +266,10 @@ If we want to see what is written at the backup.txt we use the **cat** command
 cat backup.txt
 ```
 Output:
+```bash
 
 This is document describes the structure of the data that we have collected.
-
+```
 It is  the sentence we wrote with the nano editor
 
 
@@ -332,7 +337,7 @@ chapter_1/		intro.txt
 The folder chapter_2  doesn't exist anymore. 
 
 
-## Summary of the commands 
+## Summary of the most common commands 
 
 |Command  | Name | Function |Usage|
 |---|---|---|---|
@@ -350,6 +355,7 @@ The folder chapter_2  doesn't exist anymore.
 | nano | Text editor|Edit plain text files|nano results.txt|
 | cat|Concatenate | Concatenate| cat results.txt|
 |touch|Touch|creates or modifies a file|touch pictures.txt|
+-----------------
 
 
 
