@@ -78,12 +78,16 @@ It is a common mistake to create Git directories in some or all the subdirectori
 
 The folder tree of this project should look like the picture. Only the directory recipes is a Git repo. (the Git sign is added for visualizing that we have initiated a Git repo, you will not see it at your computer)
 
-![Directories_tree](repo_directories_tree.png)
+![Directories_tree](./fig/repo_directories_tree.png)
 
-## Master and main branches
- Traditionally, the default branch name in Git whenever you init a repository was master. However, the sensitivity of the online community has shifted lately and GitHub, use now main as the default name instead. You can read the rationale in this [link](https://www.theserverside.com/feature/).
+## Master and main branches (You DON'T need to TYPE the COMMANDS in this section if you've done them in the set-up)
+ Traditionally, the default branch name in Git whenever you init a repository was master. However, the sensitivity of the online community has shifted lately and GitHub, use now main as the default name instead. 
+ You can read the reason in this [link](https://www.theserverside.com/feature/).
+
+**If you have done this step in the set up page and you don't need to repeat it here**
 
 If you are using git version 2.28 or higher (you can find the version you are using with git --version) you can change the default branch name for all new repositories with:
+
 ```bash
 git config --global init.defaultBranch main
 ```
@@ -94,6 +98,7 @@ With this command the word "master" in the Git code, it is being  replaced by th
  ```bash
 git branch -m master main
 ```
+
 
 ## Always Check!  Git Status
 
@@ -129,7 +134,8 @@ Don’t worry about all the output for now, the important bit is that the 2 dire
 
 As discussed above, creating Git repositories within and Git repository will cause confusion!! 
 
-![Warning](Warning_repo.png)
+![Warning](./fig/Warning_repo.png)
+
 
 
 
@@ -145,7 +151,8 @@ food $ git init
 
 
 Output
-```bash
+
+```bash 
 
 Initialized empty Git repository in /Users/mary/cooking/recipes/food/.git/
 (base) mary  food % ls -a
@@ -178,10 +185,12 @@ Output
 ``` bash 
 recipes % rm -rf food/.git
 cd food # go to the nested directory
-food % ls -a 
+food % ls -a
+```
 -----
 Output
 -----
+```bash
 .		..		curry.md	pizza.md
 ```
 This is recommended when there are many nested git directories in the parent (ie recipes)
@@ -194,4 +203,12 @@ In this section we present:
 - How to always check the current state of the repository with the git status command. 
 - How to correct mistakes which involved accidental multiple Git repos that confuse the Git software.
 
+Key Points 
 
+Use **git config -- global** can configure a user name, email address, editor, and other preferences once per machine.
+
+**git config -h**  Opens the use of the config, Opens the Git manual
+**git config --help**
+**git init** initializes a repository.
+Git stores all of its repository data in the **.git** directory.
+**rm -r .git** # Removes the git directory (rm -r <directory name>)
