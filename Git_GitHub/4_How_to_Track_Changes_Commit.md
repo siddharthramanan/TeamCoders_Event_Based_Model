@@ -1,7 +1,7 @@
 
 # How to change files, make Commits and placed them in Git repos. 
 
-To demonstrate changes in files using Unix Shell at the terminal and command line,  we create text files and use the **nano** as shown at the The_Unix_shell.md section. If you have Markdown files (.md) you can use a Markdown editor (Jupyter notebooks, VSCode etc). If you use .doc files use word editor. All these editors operate out of the command line at the terminal window.  
+To demonstrate changes in files using Unix Shell at the terminal and command line,  we create text files and use the **nano** as shown at the 2_Unix_shell.md section. If you have Markdown files (.md) you can use a Markdown editor (Jupyter notebooks, VSCode etc). If you use .doc files use word editor. All these editors operate out of the command line at the terminal window.  
 
 Now create a text file called pizza.text using the nano editor. Write few lines and save it as indicated at the picture.
 
@@ -53,8 +53,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 Don’t worry about all the output for now, the important bit is that the 2 files we already have are untracked in the repository (directory). We want to add the files to the list of files tracked by Git. Git does not track any files automatically and you need make a conscious decision to add a file. Let’s do what Git hints at:
 
 ```bash
-$ git add pizza.txt
-$ git status
+ $ git add pizza.txt
+ $ git status
 ```
 
 **Output**
@@ -77,8 +77,8 @@ Untracked files:
 
 
 Now this change  stages the file pizza.txt and ready to be committed. There is an option to unstage it using 
-"git rm --cached pizza.txt..." but we don't want it here.
-The files carry.md pizza.md (in the food directory) and the directory /baking/ are not on stage!!
+"git rm --cached pizza.txt..." but we dont want it here.
+The files carry.md pizza.md (in the food directory) and the directory /bakind/ are not on stage!!
 
 
  Note that if we wanted to stage and commit all the files at once we could have saved some typing here with the command (git add carry.md pizza.md pizza.txt).
@@ -173,7 +173,7 @@ Date:   Tue Feb 8 12:25:09 2022 +0000
 
 
 ```
-We’ll talk in more detail about the output here but for now the main point is to recognise that the commits have been created with your personal information and the message you specified.
+We’ll talk in more detail about the output here but for now the main point is to recognize that the commits have been created with your personal information and the message you specified.
 
 
 
@@ -208,10 +208,7 @@ Key Points covered:
 - Files can be stored in a project’s working directory (which users see), the staging area (where the next commit is being built up) and the local repository (where commits are permanently recorded).
 - **git add** puts files in the staging area.
 - **git commit** saves the staged content as a new commit in the local repository.
+- **git log** displays history of changes and all the commits information
 Write a commit message that accurately describes your changes.
 
-
 ![Commands_flow](./fig/Commands_flow.png)
-
-
-
